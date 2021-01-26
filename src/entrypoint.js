@@ -1,5 +1,11 @@
+const app = require("./interfaces/http/server");
+
+const port = 3000;
+
 const main = async () => {
-  console.warn("Unimplemented");
+  app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+  });
 };
 
 (async () => {
