@@ -1,0 +1,17 @@
+{
+  "name": "desafio_final_js_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/entrypoint.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "7.18.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
+  }
+}
