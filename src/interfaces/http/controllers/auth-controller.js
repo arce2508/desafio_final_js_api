@@ -1,5 +1,5 @@
 const signUp = (req, res, next) => {
-  res.send("Unimplementet");
+  res.send("Unimplemented");
 };
 
 module.exports = {
