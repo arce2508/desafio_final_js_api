@@ -1,7 +1,8 @@
-const createUser = require("../../../app/create-user");
+const actions = require("../../../app");
 
 const signUp = (req, res) => {
-  createUser(req.body)
+  actions
+    .createUser(req.body)
     .then((user) => {
       res.json(user);
     })
@@ -17,6 +18,25 @@ const signUp = (req, res) => {
     });
 };
 
+const login = (req, res) => {
+  actions
+    .login(req.body)
+    .then((token) => {
+      res.json({ token });
+    })
+    .catch((error) => {
+      const status = 500;
+      const response = {
+        message: error.message,
+        status,
+      };
+
+      console.error(error);
+      res.status(status).json(response);
+    });
+};
+
 module.exports = {
   signUp,
+  login,
 };
