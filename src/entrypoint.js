@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const app = require("./interfaces/http/server");
 const database = require("./infra/database");
 
